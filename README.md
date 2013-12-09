@@ -11,7 +11,7 @@ Para entender melhor como funciona este script, acesse nossa documentação onli
 * [How to use only the basic plugin (minimal setup guide).](https://github.com/blueimp/jQuery-File-Upload/wiki/Basic-plugin)
 
 ## Requisistos
-Este software utiliza-se de outros aplicativos para funcionar. TEstamos o mesmo na versão incluida no pacote. Fique a vontade para atualiza-los.
+Este software utiliza-se de outros aplicativos para funcionar. Testamos o mesmo na versão incluida no pacote. Fique a vontade para atualiza-los.
 
 * [jQuery](http://jquery.com/) v. 1.7+
 * [jQuery UI widget factory](http://www.jqueryui.com/) v. 1.7+
