@@ -1,0 +1,49 @@
+# << URLs Amigaveis
+#RewriteRule ^categorias/?$ index.php?page=categorias [L]
+#Se mantiver a ? no final, a / passa a ser opcional
+
+RewriteEngine on
+RewriteRule ^/?$                           index.php?page=home [L]
+RewriteRule ^categorias/$                  index.php?page=categorias [L]
+RewriteRule ^eventos/$                     index.php?page=eventos [L]
+RewriteRule ^relatorios/fluxo/$            index.php?page=relatorios-fluxo [L]
+RewriteRule ^relatorios/categorias/$       index.php?page=relatorios-categorias [L]
+RewriteRule ^relatorios/semana/$           index.php?page=relatorios-semana [L]
+RewriteRule ^relatorios/dia/$              index.php?page=relatorios-dia [L]
+RewriteRule ^relatorios/comparativo/$      index.php?page=relatorios-comparativo [L]
+RewriteRule ^relatorios/dinamico/$         index.php?page=relatorios-dinamico [L]
+RewriteRule ^sair/$                        index.php?page=sair [L]
+
+
+
+#Redirects
+RewriteRule ^categorias$ http://localhost/incorporativa/categorias/ [L]
+RewriteRule ^eventos$ http://localhost/incorporativa/eventos/ [L]
+RewriteRule ^relatorios/fluxo$ http://localhost/incorporativa/relatorios/fluxo/ [L]
+RewriteRule ^relatorios/categorias$ http://localhost/incorporativa/relatorios/categorias/ [L]
+RewriteRule ^relatorios/semana$ http://localhost/incorporativa/relatorios/semana/ [L]
+RewriteRule ^relatorios/dia$ http://localhost/incorporativa/relatorios/dia/ [L]
+RewriteRule ^relatorios/comparativo$ http://localhost/incorporativa/relatorios/comparativo/ [L]
+RewriteRule ^relatorios/dinamico$ http://localhost/incorporativa/relatorios/dinamico/ [L]
+RewriteRule ^sair$ http://localhost/incorporativa/sair/ [L]
+
+
+#API Rewrite rules
+#Categorias 
+RewriteRule ^categorias/rest/select$ rest/categorias_select.php [L]
+RewriteRule ^categorias/rest/save$ rest/categorias_save.php [L]
+RewriteRule ^categorias/rest/delete$ rest/categorias_delete.php [L]
+
+#Eventos
+RewriteRule ^eventos/rest/save$ rest/eventos_save.php [L]
+RewriteRule ^eventos/rest/delete$ rest/eventos_delete.php [L]
+RewriteRule ^eventos/rest/get$ rest/eventos_get.php [L]
+RewriteRule ^eventos/rest/select$ rest/relatorio_fluxo.php [L]
+
+#relatorios
+RewriteRule ^relatorios/fluxo/rest/$ rest/relatorio_fluxo.php [L]
+RewriteRule ^relatorios/categorias/rest/$ rest/relatorio_categorias.php [L]
+RewriteRule ^relatorios/semana/rest/$ rest/relatorio_semana.php [L]
+RewriteRule ^relatorios/dia/rest/$ rest/relatorio_dia.php [L]
+# >> URLs Amigaveis
+                                  
